@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class DivideTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user for input
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        // Perform division
+        if (num2 != 0) {
+            double result = num1 / num2;
+            // Display the result
+            System.out.println("The result of dividing " + num1 + " by " + num2 + " is: " + result);
+        } else {
+            System.out.println("Division by zero is not allowed.");
+        }
+
+        scanner.close();
+    }
+}
