@@ -1,0 +1,31 @@
+import java.util.Scanner; // Import Scanner for user input
+
+public class Addition {
+    public static void main(String[] args) {
+        // Create a Scanner object for input
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user for three numbers
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        System.out.print("Enter the third number: ");
+        int num3 = scanner.nextInt();
+
+        // Call the method to calculate the sum and store the result
+        int result = calculateSum(num1, num2, num3);
+
+        // Display the result
+        System.out.println("The sum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + result);
+
+        // No scanner.close() here
+    }
+
+    // Method to calculate the sum of three numbers
+    public static int calculateSum(int a, int b, int c) {
+        return a + b + c;
+    }
+}
